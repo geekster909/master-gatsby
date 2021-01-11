@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Logo from './Logo';
 
 const NavStyles = styled.nav`
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   .logo {
     transform: translateY(-25%);
   }
@@ -17,6 +17,7 @@ const NavStyles = styled.nav`
     grid-template-columns: 1fr 1fr auto 1fr 1fr;
     grid-gap: 2rem;
     align-items: center;
+    margin-top: -6rem;
   }
   li {
     --rotate: -2deg;
@@ -38,12 +39,8 @@ const NavStyles = styled.nav`
   a {
     font-size: 3rem;
     text-decoration: none;
-    display: block;
     &:hover {
       color: var(--red);
-    }
-    @media (max-width: 800px) {
-      font-size: 2rem;
     }
     /* &[aria-current='page'] {
       color: var(--red);
@@ -59,7 +56,7 @@ export default function Nav() {
           <Link to="/">Hot Now</Link>
         </li>
         <li>
-          <Link to="/pizzas">Pizza Menu</Link>
+          <Link to="/pizzas/">Pizza Menu</Link>
         </li>
         <li>
           <Link to="/">
